@@ -1,4 +1,4 @@
 import printMe from './print';
-import loadContent from './onLoad';
+import homepage from './homepage';
 
-loadContent();
+homepage();

@@ -1,10 +1,12 @@
-//import banana from './banana.jpg';
+import banana from './banana.jpg';
 
-const loadContent = () => {
+const homepage = () => {
     const content = document.querySelector('#content');
     
-    // const image = document.createElement('img');
-    // image.src = banana;
+    const image = document.createElement('img');
+        image.src = banana;
+        image.style.width = '200px';
+        content.appendChild(image);
 
     const pageTitle = document.createElement('h1');
         pageTitle.textContent = "Jim's bananas";
@@ -14,7 +16,7 @@ const loadContent = () => {
         copy.textContent = "Providing fresh and potassium rich cuisine in a comfy, stylish environment."
         content.appendChild(copy);
 
-    return content;
+    return content
 }
 
-export default loadContent;
+export default homepage;
