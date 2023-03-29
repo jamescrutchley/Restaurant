@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "sass-loader": "^13.2.1",
     "webpack": "^5.76.2",
     "webpack-bundle-analyzer": "^4.8.0",
