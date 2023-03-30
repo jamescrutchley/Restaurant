@@ -2,8 +2,6 @@ import renderHomepage from './homepage';
 import renderMenuPage from './menu';
 import renderContactPage from './contact';
 
-const contentDiv = document.querySelector('#content');
-
 const header = document.createElement('div');
 
 const homeTab = document.createElement('button');
