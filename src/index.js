@@ -1,8 +1,10 @@
+import "./style.scss";
 import renderHomepage from './homepage';
 import renderMenuPage from './menu';
 import renderContactPage from './contact';
 
 const header = document.createElement('div');
+header.id = 'header';
 
 const homeTab = document.createElement('button');
 homeTab.textContent = 'Home';
@@ -16,10 +18,9 @@ const contactTab = document.createElement('button');
 contactTab.textContent = 'Contact';
 contactTab.addEventListener('click', renderContactPage);
 
-
+header.appendChild(homeTab);
 header.appendChild(menuTab);
 header.appendChild(contactTab);
-header.appendChild(homeTab);
 document.body.appendChild(header);
 
 renderHomepage();

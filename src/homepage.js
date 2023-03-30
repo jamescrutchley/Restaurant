@@ -20,8 +20,6 @@ const renderHomepage = () => {
   copy.textContent =
     "Providing fresh and potassium rich cuisine in a comfy, stylish environment.";
   content.appendChild(copy);
-
-  return content;
 };
 
 export default renderHomepage;
