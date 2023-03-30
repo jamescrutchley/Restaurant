@@ -21,8 +21,9 @@ const addMenuItem = (dish, price, imgSrc) => {
 
 const renderMenuPage = () => {
   const contentDiv = document.querySelector("#content");
+
   Array.from(contentDiv.childNodes).forEach((child) => {
-    contentDiv.removeChild(child);
+      contentDiv.removeChild(child);
   });
 
   addMenuItem("Organic Banana Bunch", "$5.50", banana);

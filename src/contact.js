@@ -2,7 +2,7 @@ const renderContactPage = () => {
   const contentDiv = document.querySelector("#content");
 
   Array.from(contentDiv.childNodes).forEach((child) => {
-    contentDiv.removeChild(child);
+      contentDiv.removeChild(child);
   });
 
   const renderPageDiv = document.createElement("div");

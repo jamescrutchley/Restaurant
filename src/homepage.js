@@ -1,7 +1,11 @@
 import banana from "./banana.jpg";
 
-const homepage = () => {
-  const content = document.querySelector("#content");
+const renderHomepage = () => {
+  const contentDiv = document.querySelector("#content");
+
+  Array.from(contentDiv.childNodes).forEach((child) => {
+    contentDiv.removeChild(child);
+  });
 
   const image = document.createElement("img");
   image.src = banana;
@@ -20,4 +24,4 @@ const homepage = () => {
   return content;
 };
 
-export default homepage;
+export default renderHomepage;
