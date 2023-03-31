@@ -2,6 +2,8 @@ import banana from "./banana.jpg";
 
 const renderHomepage = () => {
   const contentDiv = document.querySelector("#content");
+  contentDiv.classList = '';
+  contentDiv.classList.add('homepage')
 
   Array.from(contentDiv.childNodes).forEach((child) => {
     contentDiv.removeChild(child);

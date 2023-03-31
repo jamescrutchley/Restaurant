@@ -1,5 +1,7 @@
 const renderContactPage = () => {
   const contentDiv = document.querySelector("#content");
+  contentDiv.classList = '';
+  contentDiv.classList.add('contact');
 
   Array.from(contentDiv.childNodes).forEach((child) => {
       contentDiv.removeChild(child);

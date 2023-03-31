@@ -2,6 +2,8 @@ import banana from "./banana.jpg";
 
 const addMenuItem = (dish, price, imgSrc) => {
   const contentDiv = document.querySelector("#content");
+  contentDiv.classList = '';
+  contentDiv.classList.add('menu');
   const newDish = document.createElement("div");
 
   const dishName = document.createElement("p");
@@ -18,6 +20,8 @@ const addMenuItem = (dish, price, imgSrc) => {
 
   contentDiv.appendChild(newDish);
 };
+
+
 
 const renderMenuPage = () => {
   const contentDiv = document.querySelector("#content");
