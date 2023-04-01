@@ -5,6 +5,7 @@ const addMenuItem = (dish, price, imgSrc) => {
   contentDiv.classList = '';
   contentDiv.classList.add('menu');
   const newDish = document.createElement("div");
+  newDish.classList.add('dish');
 
   const dishName = document.createElement("p");
   dishName.textContent = dish;

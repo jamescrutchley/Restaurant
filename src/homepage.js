@@ -1,4 +1,6 @@
-import banana from "./banana.jpg";
+import banana from "./bananaMan.jpg";
+
+//Photo by cottonbro studio: https://www.pexels.com/photo/drinking-glasses-with-water-beside-bananas-and-man-s-head-5876139/
 
 const renderHomepage = () => {
   const contentDiv = document.querySelector("#content");

@@ -9,6 +9,7 @@ const renderContactPage = () => {
 
   const renderPageDiv = document.createElement("div");
     renderPageDiv.textContent = 'Contact Us'
+    renderPageDiv.classList.add('contactDiv');
 
   const contactEmail = document.createElement("p");
   contactEmail.textContent = "Email: bananas@gmeal.com";
